@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Mini 3 Buttons</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 300px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #6c63ff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #574fd6;
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Menu</h2>
+
+  <button onclick="doiAnh()">doi_anh</button>
+  <button onclick="themBot()">them_bot</button>
+  <button onclick="toDoList()">to_do_list</button>
+</div>
+
+<script>
+  function doiAnh() {
+    window.open("index1.html", "_blank");
+  }
+
+  function themBot() {
+    window.open("index2.html", "_blank");
+  }
+
+  function toDoList() {
+    window.open("index3.html", "_blank");
+  }
+</script>
+
+</body>
+</html>
